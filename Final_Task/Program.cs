@@ -25,20 +25,6 @@ void FillArray(string[] collection)
 
 }
 
-void PrintArray(string[] Array3)
-{
-    System.Console.Write(" [");
-    for (int i = 0; i < Array3.Length; i++)
-    {
-        System.Console.Write(Array3[i]);
-        if (i != Array3.Length - 1)
-        {
-            System.Console.Write(", ");
-        }
-    }
-    System.Console.Write($"] ");
-}
-
 string[] FindStringOfThreeSymbol(string[] threeSymbol)
 {
 
@@ -64,6 +50,20 @@ string[] FindStringOfThreeSymbol(string[] threeSymbol)
         }
     }
     return Array2;
+}
+
+void PrintArray(string[] Array3)
+{
+    System.Console.Write(" [");
+    for (int i = 0; i < Array3.Length; i++)
+    {
+        System.Console.Write(Array3[i]);
+        if (i != Array3.Length - 1)
+        {
+            System.Console.Write(", ");
+        }
+    }
+    System.Console.Write($"] ");
 }
 
 System.Console.Write("Введите размер массива: ");
